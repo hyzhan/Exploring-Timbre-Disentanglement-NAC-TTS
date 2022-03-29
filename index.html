@@ -20,7 +20,7 @@
     <div id="toc_container">
     <ul>
       <li><a href="#origin_wav">Reference Audio</a></li>
-      <li><a href="#dataset_size">Effect of dataset size</a></li>
+      <li><a href="#dataset_size">Effect of numbers of training speakers</a></li>
       <li><a href="#ablation_studies">Ablation Studies & Baseline Models</a></li>
       <li><a href="#controllability">Controllability exploration</a></li>
     </ul>
@@ -52,7 +52,7 @@
           <td style="width: 360px;"><audio controls=""><source src="demos/Reference/LJ001-0002.wav"></audio></td>
         </tr>
       </tbody></table>
-      <a name="dataset_size"><h2>2. Effect of dataset size</h2></a>
+      <a name="dataset_size"><h2>2. Effect of numbers of training speakers</h2></a>
       <a name="cn_speaker"><h3>2.1 CN Male Speaker Utterances</h3></a>
        <table>
         <tbody>
@@ -65,21 +65,21 @@
         </tr>
         
         <tr>
-          <td nowrap="">FastPitch-based(d1)</td>
+          <td nowrap="">FastPitch-IPA(d1)</td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1/CN_Speaker/Mandarin.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1/CN_Speaker/mix1.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1/CN_Speaker/mix2.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1/CN_Speaker/English.wav"></audio></td>
         </tr>
         <tr>
-          <td nowrap="">FastPitch-based(d1+d2)</td>
+          <td nowrap="">FastPitch-IPA(d1+d2)</td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2/CN_Speaker/Mandarin.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2/CN_Speaker/mix1.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2/CN_Speaker/mix2.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2/CN_Speaker/English.wav"></audio></td>
         </tr>
         <tr>
-          <td nowrap="">FastPitch-based(d1+d2+d3)</td>
+          <td nowrap="">FastPitch-IPA(d1+d2+d3)</td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/CN_Speaker/Mandarin.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/CN_Speaker/mix1.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/CN_Speaker/mix2.wav"></audio></td>
@@ -100,21 +100,21 @@
         </tr>
         
         <tr>
-          <td nowrap="">FastPitch-based(d1)</td>
+          <td nowrap="">FastPitch-IPA(d1)</td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1/EN_Speaker/Mandarin.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1/EN_Speaker/mix1.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1/EN_Speaker/mix2.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1/EN_Speaker/English.wav"></audio></td>
         </tr>
         <tr>
-          <td nowrap="">FastPitch-based(d1+d2)</td>
+          <td nowrap="">FastPitch-IPA(d1+d2)</td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2/EN_Speaker/Mandarin.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2/EN_Speaker/mix1.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2/EN_Speaker/mix2.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2/EN_Speaker/English.wav"></audio></td>
         </tr>
         <tr>
-          <td nowrap="">FastPitch-based(d1+d2+d3)</td>
+          <td nowrap="">FastPitch-IPA(d1+d2+d3)</td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/EN_Speaker/Mandarin.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/EN_Speaker/mix1.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/EN_Speaker/mix2.wav"></audio></td>
@@ -135,35 +135,35 @@
         </tr>
         
         <tr>
-          <td nowrap="">FastPitch-based(d1+d2+d3)</td>
+          <td nowrap="">FastPitch-IPA(d1+d2+d3)</td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/CN_Speaker/Mandarin2.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/CN_Speaker/mix1-2.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/CN_Speaker/mix2-2.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/CN_Speaker/English2.wav"></audio></td>
         </tr>
         <tr>
-          <td style="width: 360px;">FastPitch-based with GRL(d1+d2+d3)</td>
+          <td style="width: 360px;">FastPitch-IPA with GRL(d1+d2+d3)</td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-GRL-d1+d2+d3/CN_Speaker/Mandarin.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-GRL-d1+d2+d3/CN_Speaker/mix1.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-GRL-d1+d2+d3/CN_Speaker/mix2.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-GRL-d1+d2+d3/CN_Speaker/English.wav"></audio></td>
         </tr>
         <tr>
-          <td style="width: 360px;">FastPitch-based without variance adaptors(d1+d2+d3)</td>
+          <td style="width: 360px;">FastSpeech-IPA(d1+d2+d3)</td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FS-d1+d2+d3/CN_Speaker/Mandarin.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FS-d1+d2+d3/CN_Speaker/mix1.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FS-d1+d2+d3/CN_Speaker/mix2.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FS-d1+d2+d3/CN_Speaker/English.wav"></audio></td>
         </tr>
         <tr>
-          <td style="width: 360px;">M3 w/o FSE(d1+d2+d3)</td>
+          <td style="width: 360px;">FastSpeech-LDP(d1+d2+d3)</td>
           <td style="width: 360px;"><audio controls=""><source src="demos/M3-wo FSE-d1+d2+d3/CN_Speaker/Mandarin.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/M3-wo FSE-d1+d2+d3/CN_Speaker/mix1.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/M3-wo FSE-d1+d2+d3/CN_Speaker/mix2.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/M3-wo FSE-d1+d2+d3/CN_Speaker/English.wav"></audio></td>
         </tr>
         <tr>
-          <td style="width: 360px;">tacotron-based(d1+d2+d3)</td>
+          <td style="width: 360px;">Tacotron-based(d1+d2+d3)</td>
           <td style="width: 360px;"><audio controls=""><source src="demos/tacotron-based-d1+d2+d3/CN_Speaker/Mandarin.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/tacotron-based-d1+d2+d3/CN_Speaker/mix1.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/tacotron-based-d1+d2+d3/CN_Speaker/mix2.wav"></audio></td>
@@ -184,35 +184,35 @@
         </tr>
         
         <tr>
-          <td nowrap="">FastPitch-based(d1+d2+d3)</td>
+          <td nowrap="">FastPitch-IPA(d1+d2+d3)</td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/EN_Speaker/Mandarin2.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/EN_Speaker/mix1-2.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/EN_Speaker/mix2-2.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/EN_Speaker/English2.wav"></audio></td>
         </tr>
         <tr>
-          <td style="width: 360px;">FastPitch-based with GRL(d1+d2+d3)</td>
+          <td style="width: 360px;">FastPitch-IPA with GRL(d1+d2+d3)</td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-GRL-d1+d2+d3/EN_Speaker/Mandarin.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-GRL-d1+d2+d3/EN_Speaker/mix1.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-GRL-d1+d2+d3/EN_Speaker/mix2.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-GRL-d1+d2+d3/EN_Speaker/English.wav"></audio></td>
         </tr>
         <tr>
-          <td style="width: 360px;">FastPitch-based without variance adaptors(d1+d2+d3)</td>
+          <td style="width: 360px;">FastSpeech-IPA(d1+d2+d3)</td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FS-d1+d2+d3/EN_Speaker/Mandarin.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FS-d1+d2+d3/EN_Speaker/mix1.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FS-d1+d2+d3/EN_Speaker/mix2.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FS-d1+d2+d3/EN_Speaker/English.wav"></audio></td>
         </tr>
         <tr>
-          <td style="width: 360px;">M3 w/o FSE(d1+d2+d3)</td>
+          <td style="width: 360px;">FastSpeech-LDP(d1+d2+d3)</td>
           <td style="width: 360px;"><audio controls=""><source src="demos/M3-wo FSE-d1+d2+d3/EN_Speaker/Mandarin.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/M3-wo FSE-d1+d2+d3/EN_Speaker/mix1.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/M3-wo FSE-d1+d2+d3/EN_Speaker/mix2.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/M3-wo FSE-d1+d2+d3/EN_Speaker/English.wav"></audio></td>
         </tr>
         <tr>
-          <td style="width: 360px;">tacotron-based(d1+d2+d3)</td>
+          <td style="width: 360px;">Tacotron-based(d1+d2+d3)</td>
           <td style="width: 360px;"><audio controls=""><source src="demos/tacotron-based-d1+d2+d3/EN_Speaker/Mandarin.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/tacotron-based-d1+d2+d3/EN_Speaker/mix1.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/tacotron-based-d1+d2+d3/EN_Speaker/mix2.wav"></audio></td>
@@ -221,55 +221,7 @@
         
       </tbody></table>
 
-      <a name="controllability"><h2>4. Controllability exploration</h2></a>
-      <a name="baseline_noall"><h3>4.1 Mandarin-dominated mixed-lingual utterances(Baseline Without All Methods)</h3></a>
-       <table>
-        <tbody>
-        <tr>
-          <td nowrap=""></td>
-          <td align="left" style="width: 360px;"><div style="width: 350px;">Text:字母表前14个字母是:A,B,C,D,E,F,G,H,I,J,K,L,M,N</div></td>
-            <td align="left" style="width: 360px;"><div style="width: 350px;">Text:字母表后12个字母是:O,P,Q,R,S,T,U,V,W,X,Y,Z</div></td>
-            <td align="left" style="width: 360px;"><div style="width: 350px;">Text:快要开会了，你的PPT做好了吗？</div></td>
-            <td align="left" style="width: 360px;"><div style="width: 350px;">Text: 这里WIFI密码是多少？</div></td>
-        </tr>
-        <tr>
-          <td nowrap="">CN Male Speaker</td>
-          <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/CN_Speaker/01-noall.wav"></audio></td>
-          <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/CN_Speaker/02-noall.wav"></audio></td>
-          <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/CN_Speaker/03-noall.wav"></audio></td>
-          <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/CN_Speaker/04-noall.wav"></audio></td>
-        </tr>
-        <tr>
-          <td nowrap="">EN Female Speaker</td>
-          <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/EN_Speaker/01-noall.wav"></audio></td>
-          <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/EN_Speaker/02-noall.wav"></audio></td>
-          <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/EN_Speaker/03-noall.wav"></audio></td>
-          <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/EN_Speaker/04-noall.wav"></audio></td>
-        </tr>
-        <tr>
-          <td nowrap=""></td>
-          <td align="left" style="width: 360px;"><div style="width: 350px;">Text:我P了一张十连出了4个SSR、3个SP、2个SR和一个R卡式神的图。</div></td>
-            <td align="left" style="width: 360px;"><div style="width: 350px;">Text:你喜欢PVP还是PVE？</div></td>
-            <td align="left" style="width: 360px;"><div style="width: 350px;">Text:这是一个AOE技能。</div></td>
-            <td align="left" style="width: 360px;"><div style="width: 350px;">Text: 你打ADC还是打辅助？</div></td>
-        </tr>
-        <tr>
-          <td nowrap="">CN Male Speaker</td>
-          <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/CN_Speaker/05-noall.wav"></audio></td>
-          <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/CN_Speaker/06-noall.wav"></audio></td>
-          <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/CN_Speaker/07-noall.wav"></audio></td>
-          <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/CN_Speaker/08-noall.wav"></audio></td>
-        </tr>
-        <tr>
-          <td nowrap="">EN Female Speaker</td>
-          <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/EN_Speaker/05-noall.wav"></audio></td>
-          <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/EN_Speaker/06-noall.wav"></audio></td>
-          <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/EN_Speaker/07-noall.wav"></audio></td>
-          <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/EN_Speaker/08-noall.wav"></audio></td>
-        </tr>
-      </tbody></table>
-
-       <a name="proposed_methods"><h3>4.2 Mandarin-dominated mixed-lingual utterances(Proposed Methods)</h3></a>
+      <a name="controllability"><h2>4. Controllability exploration of Mandarin-dominated mixed-lingual utterances</h2></a>
        <table>
         <tbody>
         <tr>
