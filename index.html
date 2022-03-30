@@ -10,7 +10,7 @@
     </article>
 
     <div><b>Abstract:</b>
-        In this paper, we present a FastPitch-based non-autoregressive cross-lingual Text-to-Speech (TTS) model built with language-independent input representation and monolingual force aligners. We propose a phoneme length regulator that solves the length mismatch problem between language-independent phonemes and monolingual alignment results. We conduct experiments to evaluate the effect of dataset size and make ablation studies on the proposed model. Our experiments show that (1) an increasing number of training speakers encourages non-autoregressive cross-lingual TTS model to disentangle speaker and language representations, and (2) variance adaptors of FastPitch model not only help disentangle speaker identity from learned representations but also improve naturalness in cross-lingual TTS. The subjective evaluation shows that our proposed model is able to achieve decent naturalness and speaker similarity. We further explore how to improve the naturalness of Mandarin-dominated mixed-lingual utterances by utilizing the controllability of our proposed model.
+        In this paper, we study the disentanglement of speaker and language representations in non-autoregressive cross-lingual TTS models from various aspects. We propose a phoneme length regulator that solves the length mismatch problem between IPA input sequence and monolingual alignment results. Using the phoneme length regulator, we present a FastPitch-based crosslingual model with IPA symbols as input representations. Our experiments show that language-independent input representations (e.g. IPA symbols), an increasing number of training speakers, and explicit modeling of speech variance information all encourage non-autoregressive cross-lingual TTS model to disentangle speaker and language representations. The subjective evaluation shows that our proposed model can achieve decent naturalness and speaker similarity in cross-language voice cloning.
 
     </div>
 
@@ -21,7 +21,7 @@
     <ul>
       <li><a href="#origin_wav">Reference Audio</a></li>
       <li><a href="#dataset_size">Effect of numbers of training speakers</a></li>
-      <li><a href="#ablation_studies">Ablation Studies & Baseline Models</a></li>
+      <li><a href="#ablation_studies">Comparison with baseline models & Ablation study</a></li>
       <li><a href="#controllability">Controllability exploration</a></li>
     </ul>
     </div>
@@ -37,7 +37,7 @@
             <td align="left"  style="width: 360px;"><div  style="width: 350px;">Text(CN): 是站在门往外看，不是往里看。</div></td>
         </tr>
         <tr>
-          <td >CN Speaker</td>
+          <td >d1-CN-M Speaker</td>
           <td style="width: 360px;" ><audio controls=""><source src="demos/Reference/01_0001.wav"></audio></td>
           <td style="width: 360px;" ><audio controls=""><source src="demos/Reference/01_0002.wav"></audio></td>
         </tr>
@@ -47,13 +47,13 @@
             <td align="left" style="width: 360px;"><div style="width: 350px;">Text(EN): in being comparatively modern.</div></td>
         </tr>
         <tr>
-          <td nowrap="">EN Speaker</td>
+          <td nowrap="">d1-EN-F Speaker</td>
           <td style="width: 360px;"><audio controls=""><source src="demos/Reference/LJ001-0001.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/Reference/LJ001-0002.wav"></audio></td>
         </tr>
       </tbody></table>
       <a name="dataset_size"><h2>2. Effect of numbers of training speakers</h2></a>
-      <a name="cn_speaker"><h3>2.1 CN Male Speaker Utterances</h3></a>
+      <a name="cn_speaker"><h3>2.1 d1-CN-M Speaker Utterances</h3></a>
        <table>
         <tbody>
         <tr>
@@ -88,7 +88,7 @@
         
       </tbody></table>
       
-      <a name="en_speaker"><h3>2.2 EN Female Speaker Utterances</h3></a>
+      <a name="en_speaker"><h3>2.2 d1-EN-F Speaker Utterances</h3></a>
        <table>
         <tbody>
         <tr>
@@ -122,8 +122,8 @@
         </tr>
       </tbody></table>
 
-      <a name="ablation_studies"><h2>3. Ablation Studies & Baseline Models</h2></a>
-      <a name="cn_speaker2"><h3>3.1 CN Male Speaker Utterances</h3></a>
+      <a name="ablation_studies"><h2>3. Comparison with baseline models & Ablation study</h2></a>
+      <a name="cn_speaker2"><h3>3.1 d1-CN-M Speaker Utterances</h3></a>
        <table>
         <tbody>
         <tr>
@@ -172,7 +172,7 @@
         
       </tbody></table>
 
-      <a name="en_speaker2"><h3>3.2 EN Female Speaker Utterances</h3></a>
+      <a name="en_speaker2"><h3>3.2 d1-EN-F Speaker Utterances</h3></a>
        <table>
         <tbody>
         <tr>
@@ -221,7 +221,7 @@
         
       </tbody></table>
 
-      <a name="controllability"><h2>4. Controllability exploration of Mandarin-dominated mixed-lingual utterances</h2></a>
+      <a name="controllability"><h2>4. Controllability exploration for Mandarin-dominated mixed-lingual utterances</h2></a>
        <table>
         <tbody>
         <tr>
@@ -232,14 +232,14 @@
             <td align="left" style="width: 360px;"><div style="width: 350px;">Text: 这里WIFI密码是多少？</div></td>
         </tr>
         <tr>
-          <td nowrap="">CN Male Speaker</td>
+          <td nowrap="">d1-CN-M Speaker</td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/CN_Speaker/01.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/CN_Speaker/02.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/CN_Speaker/03.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/CN_Speaker/04.wav"></audio></td>
         </tr>
         <tr>
-          <td nowrap="">EN Female Speaker</td>
+          <td nowrap="">d1-EN-F Speaker</td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/EN_Speaker/01.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/EN_Speaker/02.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/EN_Speaker/03.wav"></audio></td>
@@ -253,14 +253,14 @@
             <td align="left" style="width: 360px;"><div style="width: 350px;">Text: 你打ADC还是打辅助？</div></td>
         </tr>
         <tr>
-          <td nowrap="">CN Male Speaker</td>
+          <td nowrap="">d1-CN-M Speaker</td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/CN_Speaker/05.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/CN_Speaker/06.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/CN_Speaker/07.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/CN_Speaker/08.wav"></audio></td>
         </tr>
         <tr>
-          <td nowrap="">EN Female Speaker</td>
+          <td nowrap="">d1-EN-F Speaker</td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/EN_Speaker/05.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/EN_Speaker/06.wav"></audio></td>
           <td style="width: 360px;"><audio controls=""><source src="demos/FP-d1+d2+d3/EN_Speaker/07.wav"></audio></td>
